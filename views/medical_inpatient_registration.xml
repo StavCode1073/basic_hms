@@ -75,6 +75,7 @@
                     string="Inpatient Registration Info">
                     <field name="name" />
                     <field name="patient_id" />
+                    <field name="salas" />
                     <field name="hospitalization_date" />
                     <field name="discharge_date" />
                     <field name="admission_type" />
