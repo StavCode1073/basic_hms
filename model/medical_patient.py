@@ -39,7 +39,6 @@ class medical_patient(models.Model):
     date_of_birth = fields.Date(string="Date of Birth")
     sex = fields.Selection([('m', 'Male'),('f', 'Female')], string ="Sex")
     age = fields.Char(compute=onchange_age,string="Patient Age",store=True)
-    salas = fields.Many2one('medical.sala', 'Salas')
     critical_info = fields.Text(string="Patient Critical Information")
     photo = fields.Binary(string="Picture")
     blood_type = fields.Selection([('A', 'A'),('B', 'B'),('AB', 'AB'),('O', 'O')], string ="Blood Type")

@@ -15,6 +15,7 @@ class medical_inpatient_registration(models.Model):
     operating_physician_id = fields.Many2one('medical.physician',string="Operating Physician")
     admission_type = fields.Selection([('routine','Routine'),('maternity','Maternity'),('elective','Elective'),('urgent','Urgent'),('emergency','Emergency  ')],required=True,string="Admission Type")
     medical_pathology_id = fields.Many2one('medical.pathology',string="Reason for Admission")
+    salas = fields.Many2one('medical.sala', 'Sala')
     info = fields.Text(string="Extra Info")
     bed_transfers_ids = fields.One2many('bed.transfer','inpatient_id',string='Transfer Bed',readonly=True)
     medical_diet_belief_id = fields.Many2one('medical.diet.belief',string='Belief')

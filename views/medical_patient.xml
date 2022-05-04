@@ -41,7 +41,6 @@
                             </group>
                         </group>
                         <group>
-                            <field name="salas" />
                             <separator colspan="4"
                                 string="Patient Critical Information" />
                             <newline />

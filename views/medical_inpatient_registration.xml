@@ -43,6 +43,7 @@
                             </group>
                         </group>
                         <group>
+                            <field name="salas" />
                             <field name="info" />
                         </group>
                         <group colspan="4" col="4">
